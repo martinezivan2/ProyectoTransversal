@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frutas de temporada</title>
+
+  <style>
+    /* --- GENERAL --- */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* --- NAVBAR --- */
+    nav {
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+      color: #FF914D;
+    }
+
+    /* --- BANNER --- */
+    .banner_section {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(rgba(255,145,77,0.85), rgba(255,224,102,0.85)),
+                  url('https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&w=1600')
+                  no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .banner_section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .banner_section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn-custom {
+      display: inline-block;
+      background: #fff;
+      color: #FF914D;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn-custom:hover {
+      background: #FF914D;
+      color: #fff;
+    }
+
+    /* --- SECCIÓN DE FRUTAS --- */
+    .frutas_section {
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .section_title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #333;
+      font-size: 2rem;
+    }
+
+    .frutas_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .fruta-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .fruta-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .fruta-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .fruta-card h3 {
+      margin: 15px 0 10px;
+    }
+
+    .fruta-card p {
+      margin: 0 15px 15px;
+      color: #555;
+    }
+
+    /* --- FOOTER --- */
+    .footer_section {
+      background: #4CAF50;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <img src="https://raw.githubusercontent.com/martinezivan2/ProyectoTransversal/main/logoAxel.png" alt="logo">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Frutas</a></li>
+      <li><a href="#">Temporada</a></li>
+      <li><a href="#">Productores</a></li>
+    </ul>
+  </nav>
+
+  <!-- BANNER -->
+  <div class="banner_section">
+    <h1>Frutas frescas<br>De Villa de Allende</h1>
+    <p>Consume frutas locales, saludables y llenas de sabor directo de los productores.</p>
+    <a href="#" class="btn-custom">Conoce más</a>
+  </div>
+
+  <!-- SECCIÓN DE FRUTAS -->
+  <div class="frutas_section">
+    <h2 class="section_title">Frutas de temporada</h2>
+    <div class="frutas_grid">
+
+      <!-- Manzana -->
+      <div class="fruta-card">
+        <img src="https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Manzanas">
+        <h3>Manzanas</h3>
+        <p>Rojas y verdes, perfectas para postres y jugos.</p>
+      </div>
+
+      <!-- Piña -->
+      <div class="fruta-card">
+        <img src="https://images.pexels.com/photos/6157056/pexels-photo-6157056.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Piña">
+        <h3>Piña</h3>
+        <p>Refrescante y tropical, rica en vitamina C.</p>
+      </div>
+
+      <!-- Naranjas -->
+      <div class="fruta-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg" alt="Naranjas frescas">
+        <h3>Naranjas</h3>
+        <p>Ideales para jugos naturales y muy energéticas.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer_section">
+    <p>&copy; 2025 Frutas de Villa de Allende - Todos los derechos reservados</p>
+  </div>
+
+</body>
+</html>
